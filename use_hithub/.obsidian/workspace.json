@@ -11,8 +11,12 @@
             "id": "e81c7b7214ef08c7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "chapter02/chapter02 깃으로 버전 관리하기.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "chapter02/chapter02 깃으로 버전 관리하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "chapter02/chapter02 깃으로 버전 관리하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md"
+                "file": "chapter02/chapter02 깃으로 버전 관리하기.md"
               }
             }
           }
@@ -140,8 +146,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8fdd2f081aac6347",
+  "active": "e81c7b7214ef08c7",
   "lastOpenFiles": [
+    "chapter01/chapter01 깃 시작하기.md",
+    "chapter02/chapter02 깃으로 버전 관리하기.md",
+    "chapter02",
+    "chapter01",
     "Welcome.md"
   ]
 }

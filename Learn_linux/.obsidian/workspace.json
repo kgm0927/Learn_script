@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "1cadfdb5b14577c9",
+        "id": "18c897018f8bcdbb",
         "type": "tabs",
         "children": [
           {
-            "id": "5081a8986ecc3b9e",
+            "id": "1fc99bdeae9e52fd",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -138,8 +138,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5081a8986ecc3b9e",
+  "active": "1fc99bdeae9e52fd",
   "lastOpenFiles": [
+    "무제 파일.canvas",
     "chapter11/chapter11 환경.md",
     "chapter10/chapter10 프로세스.md",
     "chapter09/chapter09 퍼미션.md",
@@ -167,7 +168,6 @@
     "chapter10",
     "history.md",
     "chgrp.md",
-    "chown.md",
     "chapter09",
     "chapter08",
     "chapter07",
