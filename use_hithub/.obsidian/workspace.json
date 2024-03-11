@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter02/chapter02 깃으로 버전 관리하기.md",
+                "file": "chapter05/chapter05 깃허브로 협업하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "00cf720ee967017b",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chapter02/chapter02 깃으로 버전 관리하기.md",
+                "file": "chapter05/chapter05 깃허브로 협업하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "chapter02/chapter02 깃으로 버전 관리하기.md",
+                "file": "chapter05/chapter05 깃허브로 협업하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter02/chapter02 깃으로 버전 관리하기.md"
+                "file": "chapter05/chapter05 깃허브로 협업하기.md"
               }
             }
           }
@@ -148,8 +149,15 @@
   },
   "active": "e81c7b7214ef08c7",
   "lastOpenFiles": [
-    "chapter01/chapter01 깃 시작하기.md",
+    "chapter04/chapter 04 깃허브로 백업하기.md",
+    "chapter05/chapter05 깃허브로 협업하기.md",
+    "chapter05",
+    "chapter03/chapter03 깃과 브랜치.md",
+    "chapter04",
+    "chapter03/무제 파일.md",
     "chapter02/chapter02 깃으로 버전 관리하기.md",
+    "chapter03",
+    "chapter01/chapter01 깃 시작하기.md",
     "chapter02",
     "chapter01",
     "Welcome.md"

@@ -11,8 +11,12 @@
             "id": "1fc99bdeae9e52fd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "chapter02/ls.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "chapter02/ls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "chapter02/ls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "chapter02/ls.md"
+              }
             }
           }
         ]
@@ -140,6 +148,9 @@
   },
   "active": "1fc99bdeae9e52fd",
   "lastOpenFiles": [
+    "chapter03/chapter03 시스템 살펴보기.md",
+    "chapter02/chapter02 파일시스템 탐색.md",
+    "chapter02/cd.md",
     "무제 파일.canvas",
     "chapter11/chapter11 환경.md",
     "chapter10/chapter10 프로세스.md",
@@ -149,8 +160,6 @@
     "chapter06/chapter06 리다이렉션.md",
     "chapter05/chapter05 명령어와 친해지기.md",
     "chapter04/chapter04 파일과 디렉토리 조작.md",
-    "chapter03/chapter03 시스템 살펴보기.md",
-    "chapter02/chapter02 파일시스템 탐색.md",
     "chapter01 쉘이란 무엇인가.md",
     "head/tail.md",
     "head/head.md",
