@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter02/ls.md",
+                "file": "chapter12/chapter12 VI 맛보기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e6a03c98b5087492",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "netstat.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chapter02/ls.md",
+                "file": "netstat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "chapter02/ls.md",
+                "file": "netstat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter02/ls.md"
+                "file": "netstat.md"
               }
             }
           }
@@ -146,44 +159,44 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "1fc99bdeae9e52fd",
+  "active": "e6a03c98b5087492",
   "lastOpenFiles": [
+    "chapter16/chapter16 네트워킹.md",
+    "traceroute.md",
+    "ping.md",
+    "sftp.md",
+    "ftp.md",
+    "ssh.md",
+    "scp.md",
+    "wget.md",
+    "lftp.md",
+    "netstat.md",
+    "chapter15/chapter15 저장장치.md",
+    "chapter16",
+    "chapter15",
+    "chapter12/chapter12 VI 맛보기.md",
+    "chapter03/less.md",
+    "무제 파일.md",
+    "chapter12",
+    "chapter11/chapter11 환경.md",
+    "which.md",
+    "head/head.md",
+    "chapter02/ls.md",
     "chapter03/chapter03 시스템 살펴보기.md",
     "chapter02/chapter02 파일시스템 탐색.md",
     "chapter02/cd.md",
     "무제 파일.canvas",
-    "chapter11/chapter11 환경.md",
     "chapter10/chapter10 프로세스.md",
     "chapter09/chapter09 퍼미션.md",
     "chapter08/chapter08 고급 키보드 기법.md",
     "chapter07/chapter07 확장과 인용.md",
     "chapter06/chapter06 리다이렉션.md",
-    "chapter05/chapter05 명령어와 친해지기.md",
-    "chapter04/chapter04 파일과 디렉토리 조작.md",
-    "chapter01 쉘이란 무엇인가.md",
-    "head/tail.md",
-    "head/head.md",
-    "export.md",
-    "printenv.md",
-    "alias.md",
     "chapter11",
-    "ps.md",
-    "killall.md",
-    "kill.md",
-    "fg.md",
-    "bg.md",
-    "jobs.md",
-    "top.md",
     "chapter10",
-    "history.md",
-    "chgrp.md",
     "chapter09",
     "chapter08",
     "chapter07",
     "head",
-    "chapter06",
-    "chapter05",
-    "chapter04",
-    "chapter03"
+    "chapter06"
   ]
 }

@@ -221,4 +221,4 @@ drwxr-xr-x 2 kali kali 4096 Dec 26 20:14 Videos
 
 
 ---
-다음 챕터: [[chapter12]]
+다음 챕터: [[chapter12 VI 맛보기]]
