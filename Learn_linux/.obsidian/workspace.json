@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7c0658b2ac2dbb5d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.11"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,7 +169,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e6a03c98b5087492",
+  "active": "7c0658b2ac2dbb5d",
   "lastOpenFiles": [
     "chapter16/chapter16 네트워킹.md",
     "traceroute.md",
