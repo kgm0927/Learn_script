@@ -40,9 +40,21 @@
                 "currentVersion": "1.5.11"
               }
             }
+          },
+          {
+            "id": "9a023539f6f2d5a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "포트폴리오/성공을 위한 포트폴리오 관리.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -108,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "netstat.md",
+                "file": "포트폴리오/성공을 위한 포트폴리오 관리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "netstat.md",
+                "file": "포트폴리오/성공을 위한 포트폴리오 관리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "netstat.md"
+                "file": "포트폴리오/성공을 위한 포트폴리오 관리.md"
               }
             }
           }
@@ -169,8 +181,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7c0658b2ac2dbb5d",
+  "active": "9a023539f6f2d5a1",
   "lastOpenFiles": [
+    "스마트 제조/성공취업을 위한 로드맵.md",
+    "포트폴리오/성공을 위한 포트폴리오 관리.md",
+    "포트폴리오",
+    "스마트 제조",
+    "무제 폴더",
     "chapter16/chapter16 네트워킹.md",
     "traceroute.md",
     "ping.md",
@@ -199,14 +216,9 @@
     "chapter10/chapter10 프로세스.md",
     "chapter09/chapter09 퍼미션.md",
     "chapter08/chapter08 고급 키보드 기법.md",
-    "chapter07/chapter07 확장과 인용.md",
-    "chapter06/chapter06 리다이렉션.md",
     "chapter11",
     "chapter10",
     "chapter09",
-    "chapter08",
-    "chapter07",
-    "head",
-    "chapter06"
+    "chapter08"
   ]
 }
