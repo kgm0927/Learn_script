@@ -11,50 +11,11 @@
             "id": "1fc99bdeae9e52fd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "chapter12/chapter12 VI 맛보기.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6a03c98b5087492",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "chapter16/netstat.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7c0658b2ac2dbb5d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.11"
-              }
-            }
-          },
-          {
-            "id": "9a023539f6f2d5a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "head/tail.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "head/tail.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "head/tail.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "head/tail.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -181,17 +138,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "9a023539f6f2d5a1",
+  "active": "1fc99bdeae9e52fd",
   "lastOpenFiles": [
+    "chapter02/chapter02 파일시스템 탐색.md",
+    "chapter05/info.md",
+    "chapter12/chapter12 VI 맛보기.md",
+    "chapter16/netstat.md",
+    "head/tail.md",
     "head/head.md",
     "chapter06/chapter06 리다이렉션.md",
     "chapter05/chapter05 명령어와 친해지기.md",
     "chapter04/chapter04 파일과 디렉토리 조작.md",
     "chapter03/chapter03 시스템 살펴보기.md",
-    "chapter02/chapter02 파일시스템 탐색.md",
     "chapter01/chapter01 쉘이란 무엇인가.md",
     "chapter01 쉘이란 무엇인가.pdf",
-    "head/tail.md",
     "chapter16/wget.md",
     "chapter16/traceroute.md",
     "chapter16/tee.md",
@@ -199,17 +159,14 @@
     "chapter16/sftp.md",
     "chapter16/scp.md",
     "chapter16/ping.md",
-    "chapter16/netstat.md",
     "chapter16/lftp.md",
     "chapter16/help.md",
     "chapter16/ftp.md",
     "chapter16/chapter16 네트워킹.md",
     "chapter15/chapter15 저장장치.md",
-    "chapter12/chapter12 VI 맛보기.md",
     "chapter11/set.md",
     "chapter11/printenv.md",
     "chapter11/export.md",
-    "chapter11/chapter11 환경.md",
     "chapter01",
     "무제 파일.canvas",
     "포트폴리오",
