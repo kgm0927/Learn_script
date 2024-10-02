@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "c498ff8a22f9bdf3",
+    "type": "split",
+    "children": [
+      {
+        "id": "520bbc5e0d03fb6e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd81ba081e922b91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "542031b77f79693a",
+    "type": "split",
+    "children": [
+      {
+        "id": "450a955bb2f54906",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2683757a71726a2f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c532cfa038de0660",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d0f4380ab181c1ae",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d2ae33fb664ba62d",
+    "type": "split",
+    "children": [
+      {
+        "id": "e413b7f629a0f69a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "668ec84e10fc20ca",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cce1cf94d4dd2d1a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0d2eeaa7dd1d75c3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "42e51f8afdc13fd6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "fd81ba081e922b91",
+  "lastOpenFiles": [
+    "Learn_linux/chapter20/chapter20 텍스트 편집.md",
+    "use_hithub/chapter03/chapter03 깃과 브랜치.md",
+    "vim.md",
+    "use_hithub/chapter03/무제 파일.md",
+    "use_hithub/chapter04/chapter 04 깃허브로 백업하기.md",
+    "use_hithub/chapter01/chapter01 깃 시작하기.md",
+    "use_hithub/chapter02/chapter02 깃으로 버전 관리하기.md",
+    "Learn_linux/chapter05/info.md",
+    "Learn_linux/chapter06/grep.md",
+    "Learn_linux/chapter19/chapter19 정규 표현식.md",
+    "grep - 텍스트를 통한 검색.md",
+    "Learn_linux/chapter16/ssh.md",
+    "Learn_linux/chapter16/traceroute.md",
+    "Learn_linux/chapter16/wget.md",
+    "Learn_linux/chapter16/tee.md",
+    "Learn_linux/chapter16/help.md",
+    "Learn_linux/chapter15/chapter15 저장장치.md",
+    "Learn_linux/chapter14/chapter14 패키지 관리.md",
+    "Learn_linux/chapter17/find.md",
+    "Learn_linux/chapter10/killall.md",
+    "Learn_linux/chapter10/chapter10 프로세스.md",
+    "Learn_linux/chapter11/export.md",
+    "Learn_linux/chapter05/alias.md",
+    "Learn_linux/chapter11/printenv.md",
+    "Learn_linux/chapter12/chapter12 VI 맛보기.md",
+    "Learn_linux/chapter16/sftp.md",
+    "Learn_linux/chapter20",
+    "Learn_linux/chapter14",
+    "Learn_linux/chapter19",
+    "Learn_linux/chapter01 쉘이란 무엇인가.pdf",
+    "Learn_linux/무제 파일.canvas",
+    "Learn_linux/chapter18",
+    "Learn_linux/chapter17"
+  ]
+}
