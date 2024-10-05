@@ -1,1 +1,16 @@
-{}
+{
+	"nodes":[
+		{"id":"49762ffed68dbd21","x":-3059,"y":770,"width":400,"height":400,"type":"file","file":"Learn_linux/chapter01 쉘이란 무엇인가.pdf"},
+		{"id":"c2a45145e15c7cfd","type":"file","file":"Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md","x":-2960,"y":-266,"width":560,"height":640},
+		{"id":"e8b5b0a07913c553","type":"file","file":"Learn_linux/chapter02/chapter02 파일시스템 탐색.md","x":-2240,"y":-266,"width":640,"height":640},
+		{"id":"e309866cc06fb083","type":"file","file":"Learn_linux/chapter02/cd.md","x":-1180,"y":-880,"width":400,"height":400},
+		{"id":"eba843cd4321836b","type":"file","file":"Learn_linux/chapter02/ls.md","x":-1304,"y":374,"width":648,"height":624},
+		{"id":"6d7a390e48db8407","type":"file","file":"Learn_linux/chapter02/pwd.md","x":-1304,"y":1120,"width":648,"height":640}
+	],
+	"edges":[
+		{"id":"54cbe72ab7fba084","fromNode":"c2a45145e15c7cfd","fromSide":"right","toNode":"e8b5b0a07913c553","toSide":"left"},
+		{"id":"38befaa4d1c1cdc5","fromNode":"e8b5b0a07913c553","fromSide":"right","toNode":"e309866cc06fb083","toSide":"left"},
+		{"id":"a4d9c1bfb0478d1f","fromNode":"e8b5b0a07913c553","fromSide":"right","toNode":"eba843cd4321836b","toSide":"left"},
+		{"id":"9f54157c2ddca890","fromNode":"e8b5b0a07913c553","fromSide":"right","toNode":"6d7a390e48db8407","toSide":"left"}
+	]
+}

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md",
+                "file": "Learn_linux/chapter23/make.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "vi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d2ae33fb664ba62d",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md",
+                "file": "Learn_linux/chapter23/make.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md",
+                "file": "Learn_linux/chapter23/make.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md"
+                "file": "Learn_linux/chapter23/make.md"
               }
             }
           }
@@ -148,37 +149,43 @@
   },
   "active": "fd81ba081e922b91",
   "lastOpenFiles": [
+    "install.md",
+    "Learn_linux/chapter23/make.md",
+    "Learn_linux/chapter16/ftp.md",
+    "Learn_linux/chapter23/chapter23 프로그램 컴파일.md",
+    "Learn_linux/chapter23",
+    "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md",
+    "Learn_linux/무제 파일.canvas",
+    "Learn_linux/무제 파일 1.canvas",
+    "Learn_linux/chapter01 쉘이란 무엇인가.pdf",
+    "Learn_linux/chapter21/groff.md",
+    "스크린샷 2024-10-05 031207 1.png",
+    "스크린샷 2024-10-05 031207.png",
+    "Learn_linux/chapter21/chapter21 출력 포맷 지정.md",
     "Learn_linux/chapter20/chapter20 텍스트 편집.md",
-    "use_hithub/chapter03/chapter03 깃과 브랜치.md",
-    "vim.md",
-    "use_hithub/chapter03/무제 파일.md",
-    "use_hithub/chapter04/chapter 04 깃허브로 백업하기.md",
-    "use_hithub/chapter01/chapter01 깃 시작하기.md",
-    "use_hithub/chapter02/chapter02 깃으로 버전 관리하기.md",
-    "Learn_linux/chapter05/info.md",
-    "Learn_linux/chapter06/grep.md",
-    "Learn_linux/chapter19/chapter19 정규 표현식.md",
-    "grep - 텍스트를 통한 검색.md",
+    "Learn_linux/chapter20/comm.md",
+    "locales.md",
+    "Learn_linux/chapter18/chapter18 파일 보관 및 백업.md",
+    "Learn_linux/chapter18/rsync.md",
+    "Learn_linux/chapter18/tar.md",
+    "Learn_linux/chapter18/bzip2.md",
+    "Learn_linux/chapter18/gzip.md",
+    "Learn_linux/chapter16/lftp.md",
+    "Learn_linux/chapter16/chapter16 네트워킹.md",
     "Learn_linux/chapter16/ssh.md",
-    "Learn_linux/chapter16/traceroute.md",
-    "Learn_linux/chapter16/wget.md",
-    "Learn_linux/chapter16/tee.md",
-    "Learn_linux/chapter16/help.md",
-    "Learn_linux/chapter15/chapter15 저장장치.md",
-    "Learn_linux/chapter14/chapter14 패키지 관리.md",
-    "Learn_linux/chapter17/find.md",
-    "Learn_linux/chapter10/killall.md",
-    "Learn_linux/chapter10/chapter10 프로세스.md",
-    "Learn_linux/chapter11/export.md",
-    "Learn_linux/chapter05/alias.md",
-    "Learn_linux/chapter11/printenv.md",
     "Learn_linux/chapter12/chapter12 VI 맛보기.md",
-    "Learn_linux/chapter16/sftp.md",
+    "스크린샷 2024-10-05 021346.png",
+    "Learn_linux/chapter21/fmt.md",
+    "Learn_linux/chapter02/chapter02 파일시스템 탐색.md",
+    "Learn_linux/chapter21/printf.md",
+    "Learn_linux/chapter21/pr.md",
+    "Learn_linux/chapter21/fold.md",
+    "Learn_linux/chapter20/diff.md",
+    "Learn_linux/head/head.md",
+    "Learn_linux/chapter21",
     "Learn_linux/chapter20",
     "Learn_linux/chapter14",
     "Learn_linux/chapter19",
-    "Learn_linux/chapter01 쉘이란 무엇인가.pdf",
-    "Learn_linux/무제 파일.canvas",
     "Learn_linux/chapter18",
     "Learn_linux/chapter17"
   ]
