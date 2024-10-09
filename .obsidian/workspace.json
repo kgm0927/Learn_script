@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
+                "file": "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "du",
+                "query": "sys_info_page",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
+                "file": "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
+                "file": "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md"
+                "file": "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md"
               }
             }
           }
@@ -148,9 +148,16 @@
   },
   "active": "fd81ba081e922b91",
   "lastOpenFiles": [
+    "Learn_linux/chapter28/read.md",
+    "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
+    "Learn_linux/chapter06/grep.md",
     "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
-    "Learn_linux/chapter27",
+    "Learn_linux/chapter28",
+    "Learn_linux/chapter05/alias.md",
     "Learn_linux/chapter26/chapter26 하향식 설계.md",
+    "Learn_linux/chapter25/chapter25 프로젝트 시작하기.md",
+    "Learn_linux/chapter27/test.md",
+    "Learn_linux/chapter27",
     "Learn_linux/chapter06/sort.md",
     "Learn_linux/chapter07/echo.md",
     "Learn_linux/chapter07/chapter07 확장과 인용.md",
@@ -163,7 +170,6 @@
     "kate.md",
     "Learn_linux/chapter26",
     "Learn_linux/무제 파일.md",
-    "Learn_linux/chapter25/chapter25 프로젝트 시작하기.md",
     "use_hithub/chapter02/chapter02 깃으로 버전 관리하기.md",
     "use_hithub/chapter01/chapter01 깃 시작하기.md",
     "Learn_linux/chapter02/pwd.md",
@@ -172,12 +178,7 @@
     "Learn_linux/chapter17/find.md",
     "Learn_linux/chapter17/touch.md",
     "Learn_linux/chapter25",
-    "install.md",
-    "Learn_linux/chapter09/chmod.md",
-    "Learn_linux/chapter23/make.md",
     "Learn_linux/chapter24",
-    "Learn_linux/chapter16/ftp.md",
-    "Learn_linux/chapter23/chapter23 프로그램 컴파일.md",
     "Learn_linux/chapter23",
     "Learn_linux/무제 파일.canvas",
     "Learn_linux/무제 파일 1.canvas",
@@ -187,7 +188,6 @@
     "스크린샷 2024-10-05 021346.png",
     "Learn_linux/chapter21",
     "Learn_linux/chapter20",
-    "Learn_linux/chapter14",
-    "Learn_linux/chapter19"
+    "Learn_linux/chapter14"
   ]
 }
