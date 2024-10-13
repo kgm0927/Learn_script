@@ -60,9 +60,9 @@ kgm0917@DESKTOP-DT2VQLB:~$ ls -l foo.txt
 
 ex)
 
--rwxrw-r--
+`-rwxrw-r--`
 
-첫 번째 자리: 파일의 정류
+첫 번째 자리: 파일의 종류
 
 2~4 번째 자리: Owner 퍼미션
 

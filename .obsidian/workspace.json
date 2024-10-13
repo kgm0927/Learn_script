@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
+                "file": "bc.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sys_info_page",
+                "query": "printenv",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
+                "file": "bc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
+                "file": "bc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md"
+                "file": "bc.md"
               }
             }
           }
@@ -148,46 +148,46 @@
   },
   "active": "fd81ba081e922b91",
   "lastOpenFiles": [
-    "Learn_linux/chapter28/read.md",
-    "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
-    "Learn_linux/chapter06/grep.md",
-    "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
-    "Learn_linux/chapter28",
-    "Learn_linux/chapter05/alias.md",
-    "Learn_linux/chapter26/chapter26 하향식 설계.md",
-    "Learn_linux/chapter25/chapter25 프로젝트 시작하기.md",
-    "Learn_linux/chapter27/test.md",
-    "Learn_linux/chapter27",
-    "Learn_linux/chapter06/sort.md",
-    "Learn_linux/chapter07/echo.md",
-    "Learn_linux/chapter07/chapter07 확장과 인용.md",
-    "Learn_linux/chapter06/chapter06 리다이렉션.md",
-    "Learn_linux/chapter04/chapter04 파일과 디렉토리 조작.md",
-    "Learn_linux/chapter01/chapter01 쉘이란 무엇인가.md",
+    "Learn_linux/chapter34/chapter34 문자열과 수.md",
+    "bc.md",
+    "Learn_linux/chapter17/locate.md",
+    "Learn_linux/chapter17/chapter17 파일 검색.md",
+    "Learn_linux/chapter16/chapter16 네트워킹.md",
+    "Learn_linux/chapter16/sftp.md",
+    "Learn_linux/chapter16/scp.md",
+    "Learn_linux/chapter16/ssh.md",
+    "Learn_linux/chapter16/wget.md",
+    "Learn_linux/chapter16/lftp.md",
+    "Learn_linux/chapter16/ftp.md",
+    "Learn_linux/chapter16/netstat.md",
+    "Learn_linux/chapter16/ping.md",
+    "Learn_linux/chapter16/traceroute.md",
+    "Learn_linux/chapter15/chapter15 저장장치.md",
+    "Learn_linux/chapter14/chapter14 패키지 관리.md",
+    "Learn_linux/chapter12/chapter12 VI 맛보기.md",
     "locales.md",
-    "vi.md",
-    "du.md",
-    "kate.md",
+    "shift.md",
+    "nano.md",
+    "Learn_linux/chapter11/printenv.md",
+    "Learn_linux/chapter11/export.md",
+    "Learn_linux/chapter11/chapter11 환경.md",
+    "Learn_linux/chapter10/ps.md",
+    "Learn_linux/chapter10/top.md",
+    "Learn_linux/chapter10/chapter10 프로세스.md",
+    "Learn_linux/chapter34",
+    "Learn_linux/chapter33",
+    "Learn_linux/chapter32",
+    "Learn_linux/chapter31",
+    "Learn_linux/chapter30",
+    "Learn_linux/chapter29",
+    "Learn_linux/chapter28",
+    "Learn_linux/chapter27",
     "Learn_linux/chapter26",
-    "Learn_linux/무제 파일.md",
-    "use_hithub/chapter02/chapter02 깃으로 버전 관리하기.md",
-    "use_hithub/chapter01/chapter01 깃 시작하기.md",
-    "Learn_linux/chapter02/pwd.md",
-    "Learn_linux/chapter24/chapter24 첫 번째 쉘 스크립트.md",
-    "Learn_linux/chapter17/stat.md",
-    "Learn_linux/chapter17/find.md",
-    "Learn_linux/chapter17/touch.md",
     "Learn_linux/chapter25",
-    "Learn_linux/chapter24",
-    "Learn_linux/chapter23",
     "Learn_linux/무제 파일.canvas",
     "Learn_linux/무제 파일 1.canvas",
-    "Learn_linux/chapter01 쉘이란 무엇인가.pdf",
     "스크린샷 2024-10-05 031207 1.png",
     "스크린샷 2024-10-05 031207.png",
-    "스크린샷 2024-10-05 021346.png",
-    "Learn_linux/chapter21",
-    "Learn_linux/chapter20",
-    "Learn_linux/chapter14"
+    "스크린샷 2024-10-05 021346.png"
   ]
 }

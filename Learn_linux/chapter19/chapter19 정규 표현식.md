@@ -14,7 +14,7 @@
 ---
 # grep - 텍스트를 통한 검색
 
--[[grep#텍스트를 통한 검색|grep]]
+- [[grep#텍스트를 통한 검색|grep]]
 
 ---
 # 메타문자와 리터럴
@@ -38,6 +38,7 @@
 
 
 ```shell
+
 ┌──(kali㉿kali)-[~]
 └─$ grep -h '.zip' dirlist*.txt                 
 bunzip2
