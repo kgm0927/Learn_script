@@ -20,4 +20,4 @@ bindtextdomain (3) - set directory containing message catalogs
 binfmt.d (5) - Configure additional binary formats for executable...
 ```
 
-출력된 내용을 첫 번째 필드에는 man 페이지의 이름이 나온다. 그리고 두 번째 필드에는 그 섹션을 보여주고 있다. **man 명령어를 –k 옵션과 함께 사용하면 apropos 명령과 동일한 기능**을 한다는 것을 명심해야 한다.
+출력된 내용을 첫 번째 필드에는 man 페이지의 이름이 나온다. 그리고 두 번째 필드에는 그 섹션을 보여주고 있다. **[[man]] 명령어를 –k 옵션과 함께 사용하면 apropos 명령과 동일한 기능**을 한다는 것을 명심해야 한다.
