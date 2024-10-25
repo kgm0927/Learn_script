@@ -5,13 +5,20 @@
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:Learn_linux  ",
       "color": {
         "a": 1,
-        "rgb": 6054102
+        "rgb": 6055126
+      }
+    },
+    {
+      "query": "path:\"한눈에 빠져드는 셸 스크립트\" path:\"한눈에 빠져드는 셸 스크립트\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5960199
       }
     }
   ],
@@ -21,10 +28,10 @@
   "nodeSizeMultiplier": 1.32754677754678,
   "lineSizeMultiplier": 0.492203742203742,
   "collapse-forces": false,
-  "centerStrength": 0,
+  "centerStrength": 0.508316008316008,
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.0831742783592779,
-  "close": false
+  "scale": 0.11660891579457856,
+  "close": true
 }

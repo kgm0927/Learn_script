@@ -198,7 +198,7 @@ $
 
 ```
 
-9. 커밋이 끝나면 'git log'를 입려갷서 커밋 내역을 확인해 보라. 커밋 메시지가 'work1','work2','work3'인 커밋들이 보일 것이다. master 브랜치가 가장 최신 커밋인 'work3'를 가리키고 잇고, HEAD가 master 브랜치를 가리키고 잇다. HEAD는 여러 브랜치 중에서 현재 작업 중인 브랜치를 가리킨다.
+9. 커밋이 끝나면 'git log'를 입력해해서 커밋 내역을 확인해 보라. 커밋 메시지가 'work1','work2','work3'인 커밋들이 보일 것이다. master 브랜치가 가장 최신 커밋인 'work3'를 가리키고 잇고, HEAD가 master 브랜치를 가리키고 잇다. HEAD는 여러 브랜치 중에서 현재 작업 중인 브랜치를 가리킨다.
 
 ``` shell
 kgm09@kim_gyeong_min MINGW64 ~/Documents/manual (master)

@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "520bbc5e0d03fb6e",
+        "id": "478cd5c36f470614",
         "type": "tabs",
         "children": [
           {
-            "id": "fd81ba081e922b91",
+            "id": "6e049c146b822ac2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learn_linux/chapter36/chapter36 그 외 유용한 것들.md",
+                "file": "한눈에 빠져드는 셸 스크립트/1장/number4. 큰 숫자 표현.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "number4. 큰 숫자 표현"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
             }
           },
           {
@@ -48,13 +52,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "unset",
+                "query": "cut",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "검색"
             }
           },
           {
@@ -62,14 +68,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 243.5
   },
   "right": {
     "id": "d2ae33fb664ba62d",
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learn_linux/chapter36/chapter36 그 외 유용한 것들.md",
+                "file": "한눈에 빠져드는 셸 스크립트/1장/셸 스크립트를 보다 직관적으로 만들기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "셸 스크립트를 보다 직관적으로 만들기의 백링크"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learn_linux/chapter36/chapter36 그 외 유용한 것들.md",
+                "file": "한눈에 빠져드는 셸 스크립트/1장/셸 스크립트를 보다 직관적으로 만들기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "셸 스크립트를 보다 직관적으로 만들기의 나가는 링크"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learn_linux/chapter36/chapter36 그 외 유용한 것들.md"
-              }
+                "file": "한눈에 빠져드는 셸 스크립트/1장/셸 스크립트를 보다 직관적으로 만들기.md"
+              },
+              "icon": "lucide-list",
+              "title": "셸 스크립트를 보다 직관적으로 만들기 개요"
             }
           }
         ]
@@ -146,44 +162,44 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fd81ba081e922b91",
+  "active": "6e049c146b822ac2",
   "lastOpenFiles": [
-    "Learn_linux/chapter36/chapter36 그 외 유용한 것들.md",
-    "Learn_linux/chapter28/read.md",
-    "Learn_linux/chapter36",
-    "Learn_linux/chapter35/chapter35 배열.md",
+    "한눈에 빠져드는 셸 스크립트/1장/1장 누락된 코드 라이브러리.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number4. 큰 숫자 표현.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number3. 날짜 형식 정규화.md",
     "Learn_linux/chapter20/cut.md",
-    "Learn_linux/chapter17/stat.md",
-    "Learn_linux/chapter34/chapter34 문자열과 수.md",
+    "Learn_linux/chapter20/tr.md",
+    "Learn_linux/chapter20/chapter20 텍스트 편집.md",
+    "Learn_linux/chapter20/paste.md",
+    "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
+    "Learn_linux/chapter26/chapter26 하향식 설계.md",
     "Learn_linux/chapter25/chapter25 프로젝트 시작하기.md",
+    "Learn_linux/chapter24/chapter24 첫 번째 쉘 스크립트.md",
+    "Learn_linux/chapter17/touch.md",
+    "Learn_linux/chapter27/test.md",
+    "Learn_linux/chapter33/chapter33 흐름 제어 for 루프.md",
+    "Learn_linux/chapter31/chapter31 흐름 제어 case 분기.md",
+    "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
+    "Learn_linux/chapter29/chapter29 흐름 제어 While 루프와 Until 루프.md",
+    "Learn_linux/chapter07/echo.md",
+    "Learn_linux/chapter23/chapter23 프로그램 컴파일.md",
+    "한눈에 빠져드는 셸 스크립트/0장/로그인 스크립트 구성하기.md",
+    "한눈에 빠져드는 셸 스크립트/0장/시작해보자.md",
+    "한눈에 빠져드는 셸 스크립트/0장/0장 셸 스크립트 특강.md",
+    "한눈에 빠져드는 셸 스크립트/0장/왜 셸 스크립트인가.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number2. 입력 검사 영숫자만 가능.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number1. PATH에서 프로그램 찾기.md",
+    "한눈에 빠져드는 셸 스크립트/1장/POSIX란.md",
+    "한눈에 빠져드는 셸 스크립트/1장",
+    "한눈에 빠져드는 셸 스크립트/0장",
+    "한눈에 빠져드는 셸 스크립트",
+    "Learn_linux/chapter36",
     "Learn_linux/chapter35",
     "Learn_linux/무제 폴더",
-    "Learn_linux/chapter07/echo.md",
-    "Learn_linux/chapter07/chapter07 확장과 인용.md",
-    "Learn_linux/chapter06/wc.md",
-    "Learn_linux/chapter06/uniq.md",
-    "Learn_linux/chapter06/sort.md",
-    "du.md",
-    "Learn_linux/chapter06/chapter06 리다이렉션.md",
-    "Learn_linux/chapter06/cat.md",
-    "Learn_linux/chapter05/whatis.md",
-    "Learn_linux/chapter05/chapter05 명령어와 친해지기.md",
-    "Learn_linux/chapter05/alias.md",
-    "Learn_linux/chapter05/info.md",
-    "Learn_linux/chapter05/apropos.md",
-    "Learn_linux/chapter05/which.md",
-    "Learn_linux/chapter05/type.md",
-    "Learn_linux/chapter16/help.md",
-    "Learn_linux/chapter04/rm.md",
-    "Learn_linux/chapter04/mv.md",
-    "Learn_linux/chapter04/mkdir.md",
     "Learn_linux/chapter34",
     "Learn_linux/chapter33",
     "Learn_linux/chapter32",
     "Learn_linux/chapter31",
-    "Learn_linux/chapter30",
-    "Learn_linux/chapter29",
-    "Learn_linux/chapter28",
     "Learn_linux/무제 파일.canvas",
     "Learn_linux/무제 파일 1.canvas",
     "스크린샷 2024-10-05 031207 1.png",
