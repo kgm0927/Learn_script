@@ -43,7 +43,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cut",
+                "query": "exec",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -60,7 +60,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "검색"
+              "title": "Search"
             }
           },
           {
@@ -154,18 +154,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "6e049c146b822ac2",
   "lastOpenFiles": [
-    "한눈에 빠져드는 셸 스크립트/1장/1장 누락된 코드 라이브러리.md",
+    "Learn_linux/chapter24/chapter24 첫 번째 쉘 스크립트.md",
     "한눈에 빠져드는 셸 스크립트/1장/number4. 큰 숫자 표현.md",
+    "한눈에 빠져드는 셸 스크립트/1장/1장 누락된 코드 라이브러리.md",
     "한눈에 빠져드는 셸 스크립트/1장/number3. 날짜 형식 정규화.md",
     "Learn_linux/chapter20/cut.md",
     "Learn_linux/chapter20/tr.md",
@@ -174,7 +175,6 @@
     "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
     "Learn_linux/chapter26/chapter26 하향식 설계.md",
     "Learn_linux/chapter25/chapter25 프로젝트 시작하기.md",
-    "Learn_linux/chapter24/chapter24 첫 번째 쉘 스크립트.md",
     "Learn_linux/chapter17/touch.md",
     "Learn_linux/chapter27/test.md",
     "Learn_linux/chapter33/chapter33 흐름 제어 for 루프.md",
