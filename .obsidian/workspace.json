@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "한눈에 빠져드는 셸 스크립트/1장/number6. 부동 소수점 입력 유효성 검사.md",
+                "file": "한눈에 빠져드는 셸 스크립트/1장/number8. Poor echo 구현 피하기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "number6. 부동 소수점 입력 유효성 검사"
+              "title": "number8. Poor echo 구현 피하기"
             }
           }
         ]
@@ -164,8 +164,12 @@
   },
   "active": "6e049c146b822ac2",
   "lastOpenFiles": [
-    "한눈에 빠져드는 셸 스크립트/0장/로그인 스크립트 구성하기.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number8. Poor echo 구현 피하기.md",
+    "한눈에 빠져드는 셸 스크립트/1장/POSIX란.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number7. 날짜 형식 검사.md",
+    "Learn_linux/chapter31/case.md",
     "한눈에 빠져드는 셸 스크립트/1장/number6. 부동 소수점 입력 유효성 검사.md",
+    "한눈에 빠져드는 셸 스크립트/0장/로그인 스크립트 구성하기.md",
     "한눈에 빠져드는 셸 스크립트/1장/number5. 정수 입력 유효성 검사.md",
     "한눈에 빠져드는 셸 스크립트/1장/1장 누락된 코드 라이브러리.md",
     "if.md",
@@ -186,10 +190,6 @@
     "Learn_linux/chapter31/chapter31 흐름 제어 case 분기.md",
     "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
     "Learn_linux/chapter29/chapter29 흐름 제어 While 루프와 Until 루프.md",
-    "Learn_linux/chapter07/echo.md",
-    "Learn_linux/chapter23/chapter23 프로그램 컴파일.md",
-    "한눈에 빠져드는 셸 스크립트/0장/시작해보자.md",
-    "한눈에 빠져드는 셸 스크립트/0장/0장 셸 스크립트 특강.md",
     "한눈에 빠져드는 셸 스크립트/1장",
     "한눈에 빠져드는 셸 스크립트/0장",
     "한눈에 빠져드는 셸 스크립트",
