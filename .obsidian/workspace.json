@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "한눈에 빠져드는 셸 스크립트/1장/number12. 셀 스크립트 라이브러리 빌드하기.md",
+                "file": "Learn_linux/chapter36/chapter36 그 외 유용한 것들.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "number12. 셀 스크립트 라이브러리 빌드하기"
+              "title": "chapter36 그 외 유용한 것들"
             }
           }
         ]
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5,
-    "collapsed": true
+    "width": 243.5
   },
   "right": {
     "id": "d2ae33fb664ba62d",
@@ -165,32 +164,32 @@
   },
   "active": "6e049c146b822ac2",
   "lastOpenFiles": [
+    "Learn_linux/chapter35/chapter35 배열.md",
+    "Learn_linux/chapter34/bc.md",
+    "Learn_linux/chapter34/chapter34 문자열과 수.md",
+    "Learn_linux/chapter33/chapter33 흐름 제어 for 루프.md",
+    "Learn_linux/chapter32/shift.md",
+    "Learn_linux/chapter32/chapter32 위치 매개변수.md",
+    "Learn_linux/chapter31/chapter31 흐름 제어 case 분기.md",
+    "Learn_linux/chapter31/case.md",
+    "Learn_linux/chapter30/chapter30 문제 해결.md",
+    "Learn_linux/chapter29/until.md",
+    "Learn_linux/chapter29/chapter29 흐름 제어 While 루프와 Until 루프.md",
+    "Learn_linux/chapter29/while.md",
+    "Learn_linux/chapter28/read.md",
+    "Learn_linux/chapter28/chapter28 키보드 입력 읽기.md",
+    "Learn_linux/chapter27/test.md",
+    "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
+    "Learn_linux/chapter26/chapter26 하향식 설계.md",
+    "Learn_linux/chapter25/chapter25 프로젝트 시작하기.md",
+    "Learn_linux/chapter24/chapter24 첫 번째 쉘 스크립트.md",
+    "Learn_linux/chapter23/chapter23 프로그램 컴파일.md",
+    "Learn_linux/chapter21/chapter21 출력 포맷 지정.md",
+    "Learn_linux/chapter20/chapter20 텍스트 편집.md",
+    "Learn_linux/chapter19/chapter19 정규 표현식.md",
     "한눈에 빠져드는 셸 스크립트/1장/number12. 셀 스크립트 라이브러리 빌드하기.md",
     "한눈에 빠져드는 셸 스크립트/1장/number11. ANSI 색상 시퀀스.md",
     "한눈에 빠져드는 셸 스크립트/1장/number10. 파일 잠그기.md",
-    "한눈에 빠져드는 셸 스크립트/1장/number9. 임의 정밀도 부동 소수점 계산기.md",
-    "한눈에 빠져드는 셸 스크립트/1장/number8. Poor echo 구현 피하기.md",
-    "한눈에 빠져드는 셸 스크립트/1장/POSIX란.md",
-    "한눈에 빠져드는 셸 스크립트/1장/number7. 날짜 형식 검사.md",
-    "Learn_linux/chapter31/case.md",
-    "한눈에 빠져드는 셸 스크립트/1장/number6. 부동 소수점 입력 유효성 검사.md",
-    "한눈에 빠져드는 셸 스크립트/0장/로그인 스크립트 구성하기.md",
-    "한눈에 빠져드는 셸 스크립트/1장/number5. 정수 입력 유효성 검사.md",
-    "한눈에 빠져드는 셸 스크립트/1장/1장 누락된 코드 라이브러리.md",
-    "if.md",
-    "Learn_linux/chapter27/chapter27 흐름 제어 if 분기.md",
-    "Learn_linux/chapter29/while.md",
-    "한눈에 빠져드는 셸 스크립트/1장/number4. 큰 숫자 표현.md",
-    "Learn_linux/chapter24/chapter24 첫 번째 쉘 스크립트.md",
-    "한눈에 빠져드는 셸 스크립트/1장/number3. 날짜 형식 정규화.md",
-    "Learn_linux/chapter20/cut.md",
-    "Learn_linux/chapter20/tr.md",
-    "Learn_linux/chapter20/chapter20 텍스트 편집.md",
-    "Learn_linux/chapter20/paste.md",
-    "Learn_linux/chapter26/chapter26 하향식 설계.md",
-    "Learn_linux/chapter25/chapter25 프로젝트 시작하기.md",
-    "Learn_linux/chapter17/touch.md",
-    "Learn_linux/chapter27/test.md",
     "한눈에 빠져드는 셸 스크립트/1장",
     "한눈에 빠져드는 셸 스크립트/0장",
     "한눈에 빠져드는 셸 스크립트",
