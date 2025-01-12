@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "39173958ebe9e32b",
+    "type": "split",
+    "children": [
+      {
+        "id": "0fa1e71fca2b3e81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "52524d7fd75f7ace",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter5 서비스 보안.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter5 서비스 보안"
+            }
+          },
+          {
+            "id": "2eedc8110378feea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter5 서비스 보안.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter5 서비스 보안"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d0dcd063ac620e03",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b93b4af54af1621",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "601edd31fe351a19",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "e633a4d9d814e7e8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "9d15a953eac3d6e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "870f5b02c18f49b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb3c08a6d0850184",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8bebd1ac5a1fa8f2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Chapter1 프로젝트 시작.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Chapter1 프로젝트 시작의 백링크"
+            }
+          },
+          {
+            "id": "9b31dddccdb8fd8d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Chapter1 프로젝트 시작.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Chapter1 프로젝트 시작의 나가는 링크"
+            }
+          },
+          {
+            "id": "19807f1c64669478",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "742e05eb26a02b99",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Chapter1 프로젝트 시작.md"
+              },
+              "icon": "lucide-list",
+              "title": "Chapter1 프로젝트 시작 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "vocabulary-highlighter:Highlight vocabulary": false
+    }
+  },
+  "active": "52524d7fd75f7ace",
+  "lastOpenFiles": [
+    "Chapter2 프로토콜 버퍼와 구조체.md",
+    "Chapter1 프로젝트 시작.md",
+    "Chapter5 서비스 보안.md",
+    "Chapter4 gRPC 요청 처리.md",
+    "Chapter3 로그 패키지 작성.md",
+    "Chapter2 프로토콜 버퍼와 구조체",
+    "Welcome.md"
+  ]
+}

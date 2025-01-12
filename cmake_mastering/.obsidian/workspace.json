@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "63c5f649087496c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "941dcf4db8ded196",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6bb2593ab4196fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 01/Welcome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Welcome"
+            }
+          },
+          {
+            "id": "5b72f4923590f026",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flow Control.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Flow Control"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0974f214ae775d13",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ad3d17c5e2e4a90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71edc143db8bf577",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "0e375fd7280b15bf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "73b5e77729009dd0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "27b0366d9326ae06",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d3e174a30a68738",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "658b562cc02e1764",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Welcome의 백링크"
+            }
+          },
+          {
+            "id": "d8e924bab7e64995",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Welcome의 나가는 링크"
+            }
+          },
+          {
+            "id": "01f184d1d77e9840",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5e38b917c48f777d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md"
+              },
+              "icon": "lucide-list",
+              "title": "Welcome 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "5b72f4923590f026",
+  "lastOpenFiles": [
+    "mastering-cmake.md",
+    "Basic Commands.md",
+    "Chapter 04/CMake Syntax.md",
+    "Chapter 04/Writing CMakeLists Files.md",
+    "Flow Control.md",
+    "Chapter 03/Build Configurations.md",
+    "Chapter 03/Variable and Cache Entries.md",
+    "Chapter 03/Directories, Generators, Tests, and Properties.md",
+    "Chapter 03/Source Files.md",
+    "Chapter 03/Targets.md",
+    "Chapter 03/Main Structures.md",
+    "Chapter 02/Building Your Project.md",
+    "Chapter 02/Setting Initial Values for CMake.md",
+    "Chapter 02/Editing CMakeLists Files.md",
+    "Chapter 02/How to Run CMake.md",
+    "Chapter 02/Hello World for CMake.md",
+    "Chapter 02/Basic CMake Usage and Syntax.md",
+    "Chapter 02/Building CMake Yourself.md",
+    "Chapter 02/Getting and Installing CMake on Your Computer.md",
+    "Chapter 01/On What Platforms Does CMake Run.md",
+    "Chapter 01/Welcome.md",
+    "Chapter 01/Why Not Use Autoconf.md",
+    "Chapter 01/why Not Use JAM, qmake, or ANT.md",
+    "Chapter 01/Why Not Script It Yourself.md",
+    "Chapter 01/The History of CMake.md",
+    "Chapter 01/why cmake.md",
+    "Chapter 04",
+    "Chapter 03",
+    "Chapter 02",
+    "Chapter 01"
+  ]
+}

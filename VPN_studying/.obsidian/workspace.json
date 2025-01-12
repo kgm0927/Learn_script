@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "4468df52415808f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "a917c63f3deb88ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40c6d4d6ea5f1ad9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "제2장 순수 IPsecVPN/예제 2-13 리눅스 환경.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "예제 2-13 리눅스 환경"
+            }
+          },
+          {
+            "id": "ddac3fd07f4e2c16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "제2장 순수 IPsecVPN/예제 2-1 리눅스 환경.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "예제 2-1 리눅스 환경"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5a739465b08ff594",
+    "type": "split",
+    "children": [
+      {
+        "id": "069fb4821deb407d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e83be0e94762c0c6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "247addb91be4bad8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "487fa52926237b81",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "56a382649ca4acbc",
+    "type": "split",
+    "children": [
+      {
+        "id": "94f321a7c940696c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71f5f0a08a70fdec",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1. VPN 개요/VPN 개요.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "VPN 개요의 백링크"
+            }
+          },
+          {
+            "id": "cff6856c6a74ec88",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1. VPN 개요/VPN 개요.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "VPN 개요의 나가는 링크"
+            }
+          },
+          {
+            "id": "6109d2507305199e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d2af61b63a5ed171",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1. VPN 개요/VPN 개요.md"
+              },
+              "icon": "lucide-list",
+              "title": "VPN 개요 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "40c6d4d6ea5f1ad9",
+  "lastOpenFiles": [
+    "예제 2-13 리눅스 환경 오류.md",
+    "2024-12-29.md",
+    "제2장 순수 IPsecVPN/예제 2-13 리눅스 환경.md",
+    "제2장 순수 IPsecVPN/순수 IPsec VPN 설정 및 동작 방식.md",
+    "제2장 순수 IPsecVPN/`crypto isakmp`.md",
+    "제2장 순수 IPsecVPN/예제 2-11 리눅스 환경.md",
+    "제2장 순수 IPsecVPN/예제 2-9 리눅스 환경.md",
+    "제2장 순수 IPsecVPN/예제 2-7 리눅스 환경.md",
+    "제2장 순수 IPsecVPN/예제 2-2 리눅스 환경.md",
+    "제2장 순수 IPsecVPN/예제 2-1 리눅스 환경.md",
+    "제2장 순수 IPsecVPN/동적 크립토 맵.md",
+    "1. VPN 개요/IPsec VPN 개요.md",
+    "제2장 순수 IPsecVPN/제2장.md",
+    "1. VPN 개요/VPN 개요.md",
+    "기본 폴더 - 14.jpg",
+    "기본 폴더 - 13.jpg",
+    "기본 폴더 - 12.jpg",
+    "기본 폴더 - 11.jpg",
+    "기본 폴더 - 10.jpg",
+    "기본 폴더 - 9.jpg",
+    "기본 폴더 - 8.jpg",
+    "기본 폴더 - 7.jpg",
+    "기본 폴더 - 6.jpg",
+    "기본 폴더 - 5 1.jpg",
+    "예제 2-20 리눅스 환경.md",
+    "제2장 순수 IPsecVPN/예제 2-19 리눅스 환경.md",
+    "제2장 순수 IPsecVPN/예제 2-18 리눅스 환경.md",
+    "제2장 순수 IPsecVPN",
+    "1. VPN 개요/제1장.md",
+    "Welcome.md",
+    "1. VPN 개요"
+  ]
+}

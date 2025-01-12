@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learn_linux/chapter07/echo.md",
+                "file": "use_hithub/chapter01/chapter01 깃 시작하기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "echo"
+              "title": "chapter01 깃 시작하기"
             }
           },
           {
@@ -178,6 +178,15 @@
   },
   "active": "6e049c146b822ac2",
   "lastOpenFiles": [
+    "한눈에 빠져드는 셸 스크립트/1장/number2. 입력 검사 영숫자만 가능.md",
+    "한눈에 빠져드는 셸 스크립트/1장/1장 누락된 코드 라이브러리.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number10. 파일 잠그기.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number9. 임의 정밀도 부동 소수점 계산기.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number4. 큰 숫자 표현.md",
+    "한눈에 빠져드는 셸 스크립트/1장/number6. 부동 소수점 입력 유효성 검사.md",
+    "한눈에 빠져드는 셸 스크립트/0장/그런데, 셸 스크립트가 뭔가요.md",
+    "한눈에 빠져드는 셸 스크립트/0장/0장 셸 스크립트 특강.md",
+    "Learn_linux/chapter07/echo.md",
     "Learn_linux/chapter07/chapter07 확장과 인용.md",
     "Learn_linux/chapter06/wc.md",
     "Learn_linux/chapter06/uniq.md",
@@ -195,15 +204,6 @@
     "Learn_linux/chapter04/ln.md",
     "Learn_linux/chapter04/rm.md",
     "Learn_linux/chapter04/mv.md",
-    "Learn_linux/chapter04/mkdir.md",
-    "Learn_linux/chapter04/cp.md",
-    "Learn_linux/chapter03/less.md",
-    "Learn_linux/chapter03/file.md",
-    "Learn_linux/chapter03/chapter03 시스템 살펴보기.md",
-    "Learn_linux/chapter02/chapter02 파일시스템 탐색.md",
-    "Learn_linux/chapter02/ls.md",
-    "Learn_linux/chapter02/pwd.md",
-    "Learn_linux/chapter02/cd.md",
     "스크린샷 2024-10-05 021346.png",
     "한눈에 빠져드는 셸 스크립트/1장",
     "한눈에 빠져드는 셸 스크립트/0장",
