@@ -473,3 +473,385 @@ Transform set PHASE2-POLICY: {esp-aes esp-md5-hmac}
 ```
 
 또, 확인 결과에서 기본적인 IPsec 모드가 터널 모드인 것도 알 수 있다.
+
+
+---
+# 크립토 맵 만들기
+
+앞서 지정한 보호대상 네트워크, 보안 알고리즘 종류 등을 하나로 묶기 위하여 다음과 같이 크립토 맵(crypto map)을 만든다.
+
+[예제 2-22] 크립토 맵 만들기
+
+``` bash
+$ R2(config)# crypto map VPN 10 ipsec-isakmp
+$ R2(config-crypto-map)# match address R4
+$ R2(ocnfig-crypto-map)# set peer 1.1.34.4
+$ R2(config-crypto-map)# set transform-set PHASE2-POLICY
+$ R2(config-crypto-map)# exit
+
+$ R2(config)# crypto map VPN 20 ipsec-isakmp
+$ R2(config-crypto-map)# match address R4
+$ R2(ocnfig-crypto-map)# set peer 1.1.34.4
+$ R2(config-crypto-map)# set transform-set PHASE2-POLICY
+$ R2(config-crypto-map)# exit
+```
+
+
+마지막으로 앞서 만든 크립토 맵을 다음과 같이 인터페이스에 적용한다.
+
+[[예제 2-23 리눅스 예제]]
+
+
+[예제 2-23] 크립토 맵을 인터페이스에 적용하기
+``` bash
+R2(config)# interface f0/0.23
+R2(config-subif)# crypto map VPN
+```
+
+이상으로 본사 VPN 게이트웨이인 R2에서 기본적인 IPsec L2L VPN 설정이 완료되었다.
+
+
+---
+# 지사의 IPsec L2L VPN 설정
+
+이번에는 지사 라우터에서 IPsec L2L VPN을 설정해 보자. R4의 IKE 제1단계 정책 설정은 다음과 같다.
+
+[예제 2-24] IKE 제1단계 정책 설정
+
+``` bash
+R4(config)# crypto isakmp policy 10
+R4(config-isakmp)# encryption aes
+R4(config-isakmp)# authentication pre-share
+R4(config-isakmp)# group 2
+R4(conifg-isakmp)# exit
+
+R4(config)# crypto isakmp key cisco address 1.1.32.2
+```
+
+피어인 본사와 동일한 IKE 제1단계 보안정책을 사용해야 한다. 즉, AES 알고리즘을 이용하여 패킷을 암호화하고, 인증 방식으로 미리 설정한 암호(PSK)를 사용하며, 암호화 및 무결성 확인을 위한 대칭키를 디피-헬먼 그룹 2 알고리즘을 사용하여 생성한다. 또, 본사에서 설정한 것과 동일한 암호를 지정하였다.
+
+R4의 IKE 제2단계 정책 설정은 다음과 같다.
+
+
+[예제 2-25] R4의 IKE 제2단계 정책 설정
+
+``` bash
+R4(config)# ip access-list extended R2
+R4(config-ext-nacl)# permit ip 10.1.40.0 0.0.0.25 10.1.10.0 0.0.0255
+R4(config-ext-nacl)# permit ip 10.1.40.0 0.0.0.25 10.1.12.0 0.0.0255
+R4(config-ext-nacl)# permit ip 10.1.40.0 0.0.0.25 10.1.50.0 0.0.0255
+R4(config-ext-nacl)# exit
+
+R4(config)# crypto ipsec transform-set PHASE2-POLICY esp-aes esp-md5-hmac
+R4(cfg-crypto-trans)# exit
+
+```
+ IPsec으로 보호할 트래픽을 ACL을 이용하여 지정하였다. 본사에서 지정한 내용과 반대로 설정하면 된다. 예를 들어, <mark style="background: #ADCCFFA6;">본사의 설정에서는 10.1.10.0/24에서 10.1.40.0/24로 가는 패킷을 보호하고</mark>, <mark style="background: #ADCCFFA6;">지사에서는 반대로 10.1.40.0/24에서 10.1.10.0/24로 가는 패킷을 보호하도록 설정한다.
+</mark>
+
+마지막으로 다음과 같이 크립토 맵을 만들고 인터페이스에 적용한다.
+
+[예제 2-26] 크립토 맵을 만들고 인터페이스에 적용하기
+``` bash
+R4(config)# crypto map VPN 10 ipsec-isakmp
+R4(config-crypto-map)# match address R2
+R4(config-crypto-map)# set peer 1.1.23.2
+R4(config-crypto-map)# set transform-set PHASE2-POLICY
+R4(config-crypto-map)# exit
+
+R4(config)# interface f0/0.34
+R4(config0subif)# crypto map VPN
+R4(config0subif)# exit
+
+```
+
+이상과 같이 지사인 R4에서 IPsec L2L VPN을 설정하였다. 다음은 R5에서 IPsec VPN을 설정한다.
+
+[예제 2-27] R5의 IPsec VPN 설정
+
+``` bash
+R5(config)# crypto isakmp policy 10
+R5(config-isakmp)# encryption aes
+R5(config-isakmp)# authentication pre-share
+R5(config-isakmp)# group 2
+R5(config-isakmp)# exit
+
+R5(config)# crypto isakmp key 6 cisco address 1.1.23.2
+
+R5(config)# ip access-list extended R2
+R5(config-ext-nacl)# permit ip 10.1.50.0 0.0.0.255 10.1.10.0 0.0.0.255
+R5(config-ext-nacl)# permit ip 10.1.50.0 0.0.0.255 10.1.12.0 0.0.0.255
+R5(config-ext-nacl)# permit ip 10.1.50.0 0.0.0.255 10.1.40.0 0.0.0.255
+R5(config)# exit
+
+R5(config)# crypto ipsec transform-set PHASE2-POLICY esp-aes esp-md5-hmac
+R5(cfg-crypto-trans)# exit
+
+R5(config)# crypto map VPN 10 ipsec-isakmp
+R5(config-crypto-map)# match address R2
+R5(config-crypto-map)# set peer 1.1.23.2
+R5(config-crypto-map)# set transform-set PHASE2-POLICY
+R5(config-crypto-map)# exit
+
+R5(config)# interface f0/0.35
+R5(config-subif)# crypto map VPN
+R5(config-subif)# exit
+
+```
+
+R5의 설정도 R2, R4와 유사하므로 설명은 생략한다. 이상과 같이 IPsec L2L VPN 게이트웨이인 R2, R4, R5의 설정이 완료되었다.
+
+---
+# 루프백 IP 주소를 이용한 피어 설정
+
+루프백 IP 주소를 이용하여 피어를 설정하면, 피어와 연결되는 다수개의 경로가 있을 때 하나의 경로가 다운되어도 계속적인 VPN 동작이 가능하다. 이를 위하여 다음과 같이 외부망에서 라우팅 가능한 IP 주소를 루프백 인터페이스에 부여한다.
+
+[예제 2-28]
+
+``` bash
+R2(config)# interface lo0
+R2(config-if)# ip address 1.1.2.2. 255.255.255.0
+
+R2(config)# crypto isakmp key 6 cisco address 1.1.4.4
+
+R2(config)# crypto map VPN local-address loopback 0
+R2(config)# crypto map VPN 10 ipsec-isakmp
+R2(config-crypto-map)# set peer 1.1.4.4
+R2(config-crypto-map)# exit
+
+R2(config)# interface f0/0.23
+R2(config-subif)# crypto map VPN
+```
+
+그런 다음, 크립토 맵을 만들 때 `crypto map VPN local-address loopback 0` 명령을 사용하여 VPN 세션의 출발지 주소가 루프백에 설정된 것임을 알려주면 된다.
+
+
+
+### IPsec L2L VPN 동작 확인
+
+이제, IPsec L2L VPN의 동작을 확인해보자. 먼저, 다음과 같이 R2에게 `clear access-list counters` 명령어를 사용하여 ACL의 통계를 초기화시킨다.
+
+[예제 2-29] ACL 통계 초기화
+
+``` bash
+R2# clear access-list counters
+```
+
+R2에서 다음과 같이 `show crypto isakmp peers` 명령어를 사용하여 확인해 보면 피어가 없다.
+
+
+
+[예제 2-30] 피어 확인
+
+``` bash
+R2# show crypto isakmp peers
+
+R2#
+```
+
+본사 내부 라우터인 R1에서 지사의 내부망인 10.1.40.4로 핑을 해보면 성공한다.
+
+
+[예제 2-31] 핑 테스트
+
+``` bash
+R1# ping 10.1.40.4
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.40.4, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5). round-trip min/avg/max= 72/133/232 ms
+```
+
+즉, R2가 10.1.12.1에서 10.1.40.4로 전송되는 패킷을 IPsec 터널로 전송하고, R4도 IPsec 터널로 응답했다. R2에서 다시 `show crypto isakmp peers` 명령어를 사용하여 확인해 보면 다음과 같이 R4의 주소인 1.1.34.4가 피어로 등록된다.
+
+[예제 2-32] 1.1.34.4가 피어로 등록
+
+``` bash
+R2# show crypto isakmp peers
+Peer: 1.1.34.4 Port: 500 Local: 1.1.32.2
+Phase1 id: 1.1.34.4
+```
+
+다음과 같이 `show crypto isakmp sa` 명령어를 사용하여 확인해 보면 상태가 `QM_IDLE`로 표시되면 ISAKMP가 정상적으로 동작하여 피어가 맺어졌음을 의미한다. 피어 중에서 세션을 먼저 시작하는 측이 출발지(src) 주소로 표시되고 상대가 목적지(dst) 주소로 표시된다.
+
+[예제 2-33] ISKAMP SA 확인
+
+``` bash
+R2# show crypto isakmp sa
+IPv4 Crypto ISAKMP SA
+dst          src            state        conn-id     slot          status
+1.1.34.4     1.1.23.2       QM_IDLE         1005        0          ACTIVE
+```
+
+다음과 같이 `show crypto ipsec sa` 명령어를 사용하여 확인해 보면 보호대상 트래픽 별로 ESP 포맷으로 인캡슐레이션되고, 암호화되며, 무결성 확인을 위해 해시 코드를 추가하여 전송한 패킷의 수가 표시된다. 반대로 상대측에서 수신하여 디캡슐레이션, 복호화 및 무결성 확인과정을 거친 패킷 수도 표시된다.
+
+
+[예제 2-34] IPsec SA 확인
+
+```bash
+R2# show crypto ipsec sa
+
+
+```
+
+다음과 같이 show crypto session detail 명령어를 사용하여 확인해보면 각 SA 별 암호화 및 복호화된 패킷 수를 알 수 있다.
+``` bash
+R2# show crypto session detail
+```
+
+다음과 같이 show crypto engine connection active 명령어를 사용하여 확인하면 앞서 show crypto ipsec sa 명령어로 확인할 수 있는 각 접속 ID별 암호화 및 복호화된 패킷 수를 간단히 알 수 있다.
+
+
+[예제 2-36] 크립토 접속 확인
+
+``` bash
+R2# show crypto engine connections active
+```
+
+다음과 같이 show ip access-lists 명령어를 사용하여 ACL의 적용 통계를 보면 R4가 R2로 전송한 ISAKMP 패킷 (UDP 포트 500)의 수와 ESP 패킷의 수를 확인할 수 있다.
+
+
+[예제 2-37] ACL 통계 확인
+
+``` bash
+R2# show ip access-lists
+```
+
+다음과 같이 R5에서 R2로 핑을 하여 IPsec이 동작하도록 한다.
+
+
+[예제 2-38] 핑 테스트
+
+```bash
+R5# ping 10.1.10.1 source 10.1.50.5
+```
+
+다시, 다음과 같이 `show ip access-lists` 명령어를 사용하여 ACL의 적용 통계를 보면 R5가 R2로 전송한 ISAKMP 패킷 (UDP 포트 500)의 수와 ESP 패킷의 수를 확인할 수 있다.
+
+
+[예제 2-39] ACL 확인
+
+```bash
+R2# show ip access-lists
+```
+
+다음과 같이 R2에서 다른 라우터의 내부망이 아닌 인터넷으로 핑을 해보면 실패한다.
+
+
+[예제 2-40] 핑 테스트
+
+```bash
+P2# ping 1.1.23.3
+```
+
+그 이유는 1.1.23.2에서 1.1.23.3으로 전송되는 패킷은 IPsec으로 보호해야 하는 패킷이 아니므로 그냥 전송된다. 이 패킷이 다시 내부로 돌아올 때도 ESP로 인캡슐레이션된 것이 아니므로 ACL-INBOUND에 의해서 차단된다. 다음과 같이 R2의 ACL에서 목적지 IP 주소가 1.1.23.2인 ICMP 패킷을 허용해 보자.
+
+[예제 2-41] ICMP 패킷 허용
+
+```bash
+R2(config)# ip access-list extended ACL-INBOUND
+R2(config-ext-nacl)# permit icmp any host 1.1.23.2
+R2(config-ext-nacl)# exit
+
+```
+
+이제, R2에서 1.1.23.3으로 핑이 된다.
+
+
+
+[예제 2-42] 핑 테스트
+
+``` bash
+R2# ping 1.1.23.3
+```
+
+ISAKMP SA와 IPsec SA를 모두 지우려면 다음과 같이 `clear crypto session remote` 명령어를 사용한다. 그려면, IPsec VPN 접속이 끊긴다.
+
+[예제 2-43] IPsec 세션 끊기
+
+``` bash
+R2# clear crypto session remote 1.1.34.4
+```
+
+잠시후 `show crypto isakmp sa` 명령어를 사용하여 확인해 보면 다음과 같이 피어 주소 1.1.34.4에 대한 ISAKMP SA가 존재하지 않는다.
+
+
+[예제 2-44] 1.1.34.4에 대한 ISAKMP SA가 없다.
+
+```bash
+$R2# show crypto isakmp sa
+```
+
+ISAKMP가 동작하는 것을 실시간으로 확인하려면 다음과 같이 debug crypto isakmp 명령어를 사용한다.
+
+
+[예제 2-45] ISAKMP 디버깅
+
+``` bash
+R2# debug crypto isakmp
+```
+
+다음과 같이 R1에서 R4의 내부망으로 핑을 때려 IPsec으로 보호해야 하는 트래픽을 발생시킨다.
+
+
+[예제 2-46] IPsec 트래픽 발생
+
+```bash
+R1# ping 10.1.40.4
+```
+
+R2에서의 ISAKMP 동작 디버깅 결과를 다음과 같이 일부만 표시하였다.
+
+
+[예제 2-47] ISAKMP 동작 디버깅
+
+``` bash
+R2#
+ISAKMP:(0):found peer pre-shared key matching 1.1.34.4 (1)
+
+ISAKMP:(0): beginning Main Mode exchange (2)
+
+ISAKMP:(1008):beginning Quick Mode exchange, M-ID of -1458007633 (3)
+
+
+OMPLETE
+```
+
+1. 미리 설정된 인증용 암호 (PSK)로 피어를 인증한다.
+2. IKE 제1단계에서 사용할 보안정책을 협상하여 결정한다.
+3. IKE 제2단계에서 사용할 보안정책을 협상하여 결정한다.
+
+IPsec 동작과정을 확인하려면 다음과 같이 `debug crypto ipsec` 명령어를 사용한다.
+
+
+[예제 2-48] IPsec 디버깅
+
+```bash
+R2# clear crypto session remote 1.1.34.4
+R2# un all
+R2# debug crypto ipsec
+```
+
+R1에서 R4의 내부망인 10.1.40.4로 핑을 때려 IPsec으로 보호해야 하는 트래픽을 발생시킨다. 이후, R2에서의 IPsec 동작 디버깅 결과를 다음과 같이 일부만 표시하면 다음과 같다. IPsec SA는 입력 및 루력 방향에 따라 별개로 생성된다.
+
+[예제 2-49] IPsec 동작 디버깅 결과
+
+```bash
+
+R2#
+IPSEC(sa_request): ,
+	(key eng. msg.) OUTBOUND local=1.1.23.2, remote=1.1.34.4,
+	local_proxy=10.1.12.0/255.255.255.0/0/0 (type=4)
+	remote_proxy=10.1.40.0/255.255.255.0/0/0 (type=4)
+	protocol=ESP, transform= esp-aes esp-md5-hmac (Tunnel),
+	lifedur=3600s and 4608000kb,
+	spi=0x0(0), conn_id=0, keysize=128,flags=0x0
+
+IPSEC(create_sa):sa created,
+(sa) sa_dest=1.1.23.2 sa_proto=50,
+sa_spi=0x62223D9(102900697),
+sa_trans=esp-aes esp-md5-hmac, sa_conn_id=39
+```
+
+이상으로 기본적인 IPsec L2L VPN을 설정하고, 동작하는 방식으로 살펴보았다.

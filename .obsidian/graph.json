@@ -20,6 +20,13 @@
         "a": 1,
         "rgb": 5960199
       }
+    },
+    {
+      "query": "path:VPN_studying  ",
+      "color": {
+        "a": 1,
+        "rgb": 16514821
+      }
     }
   ],
   "collapse-display": false,
@@ -32,6 +39,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.11660891579457354,
+  "scale": 0.05932617187500038,
   "close": true
 }
