@@ -16,7 +16,7 @@ IPsec VPN 이중화 구성을 위하여 다음과 같은 테스트 네트워크�
 
 [그림 3-1] 테스트 네트워크
 
-
+![[3장 - 1.jpg]]
 
 
 
@@ -25,7 +25,7 @@ IPsec VPN 이중화 구성을 위하여 다음과 같은 테스트 네트워크�
 
 [그림 3-2] 인터페이스별 IP 주소
 
-
+![[3장 - 2.jpg]]
 
 각 라우터에서 F0/0 인터페이스를 서브 인터페이스로 동작시킨다. 서브 인터페이스 번호, 서브넷 번호 및 VLAN 번호를 동일하게 사용한다. 이를 위하여 다음과 같이 SW1에서 VLAN을 만들고, 각 라우터와 연결되는 포트를 트렁크로 동작시킨다.
 
@@ -208,7 +208,7 @@ R3(config-subif)# exit
 [그림 3-3] 외부망 라우팅
 
 
-
+![[3장 - 3.jpg]]
 
 
 R2, R3에서 R4 방향으로 정적인 디폴트 루트를 설정하고, R4에서 R5 방향으로, R6,R7에서 R5 방향으로도 정적인 디폴트 루트를 설정한다.  R5에서는 R4 내부에서 공인 IP 주소로 사용할 1.1.100.0/24 네트워크에 대해서 정적 경로를 설정한다 .각 라우터의 설정은 다음과 같다.
@@ -260,7 +260,7 @@ R2# ping 1.1.57.7
 
 [그림 3-4] HSRP 설정
 
-
+![[3장 - 4.jpg]]
 
 HSRP 그룹 1을 설정하고 이름을 GROUP1로 지정한다. 가상 IP 주소 (VIP, virtual IP)는 1.1.100.10으로 설정하고, R2를 액티브 라우터로 동작시킨다. R2의 각 인터페이스에 장애가 발생하면 R3이 액티브 라우터가 되도록 한다. 이를 위한 R2의 설정은 다음과 같다.
 
@@ -308,7 +308,7 @@ R3# show standby brief
 [그림 3-5] 내부망 라우팅
 
 
-
+![[3장 - 5.jpg]]
 
 
 
@@ -388,7 +388,7 @@ O*E1 0.0.0.0/0 [110/2] via 10.1.12.2, 00:01:39 FastEthernet0/0.12
 [그림 3-6]IPsec L2L VPN
 
 
-
+![[3장 - 6.jpg]]
 
 
 
@@ -719,7 +719,7 @@ O*E1 0.0.0.0 [110/20] via 10.1.12.2, 00:33:23, FastEthernet0/0.12
 
 [그림 3-7] 정상시의 통신 경로
 
-
+![[3장 - 7.jpg]]
 
 
 그러다가, R2에 장애가 발생하면 다음 그림과 같이 R3과 지사 라우터들간에 IPsec 세션이 만들어지고 이번에는 R3이 RRI를 이용하여 정적 경로를 생성한 후 OSPF를 통하여 R1에게 광고한다.
@@ -727,7 +727,7 @@ O*E1 0.0.0.0 [110/20] via 10.1.12.2, 00:33:23, FastEthernet0/0.12
 
 [그림 3-8] 장애 발생시의 통신 경로
 
-
+![[3장 - 8.jpg]]
 
 이제 R1에서 목적지가 10.1.60.0/24이거나 10.1.70.0/24인 패킷들은 라우팅 테이블을 참조하여 모두 R3으로 전송된다. 이를 수신한 R3은 목적지가 10.1.60.0/24이거나 10.1.70.0/24인 패킷들을 RRI가 만든 라우팅 테이블을 참조하여 해당 게이트인 R6 또는 R7로 전송한다.
 
@@ -787,7 +787,7 @@ R6#  ping 10.1.10.1 source 10.1.60.6 repeat 10000009
 
 [그림 3-9] 장애 발생시의 IPsec VPN 게이트웨이
 
-
+![[3장 - 9.jpg]]
 
 
 다음 디버깅 결과를 참조하여 IPsec VPN 이중화가 동작하는 것을 살펴보자.
@@ -830,3 +830,48 @@ IPSEC(update_current_outbound_sa): updated peer 1.1.56.6 current outbound sa to 
 6. 새로운 IPsec SA가 만들어진다.
 
 이후 R3의 라우팅 테이블을 확인해보면 다음과 같이 RRI에 의한 정적 경로가 인스톨된다.
+
+
+[예제 3-36] R3의 라우팅 테이블
+
+```bash
+R3# show ip route
+
+
+Gateway of last resort is 1.1.100.4 to network 0.0.0.0
+
+1.0.0.0/24 is subnetted, 1 subnets
+C      1.1.100.0 is directly connected, FastEthernet0/0.100
+10.0.0.0/24 is subnetted, 4 subnets
+O      10.1.10.0 [110/2] via 10.1.13.1 00:45:44, FastEthernet0/0.12
+C      10.1.13.0 is directly connected, FastEthernet0/0.13
+O      10.1.12.0 [110/2] via 10.1.13.1, 00:45:44, FastEthernet0/0.13
+S      10.1.60.0 [1/0] via 1.1.56.6
+S*     0.0.0.0/0 [1/0] via 1.1.100.4
+
+```
+
+다음과 같이 show crypto engine connection active 명령어를 사용하여 확인해 보면 R3이 암호화/복호화한 IPsec 패킷 수가 증가한다.
+
+
+[예제 3-37] IPsec 패킷 수 확인
+``` bash
+R3# show crypto engine connection active
+Crypto Engine Connection
+
+ID Interface     Type    Algorithm          Enctypt   Decrypt      IP-Address
+1  Fa0/0.100     IPsec   AES+SHA             0             91      1.1.100.10
+2  Fa0/0.100     IPsec   AES+SHA             91             0      1.1.100.10
+
+
+```
+ R1의 라우팅 테이블에도 R3이 RRI를 이용하여 만든 정적 경로가 OSPF를 통하여 인스톨된다.
+
+
+[예제 3-38] R1의 라우팅 테이블
+``` bash
+R3# show ip route ospf
+```
+
+
+이상으로 HSFP, DPD 및 RRI를 이용한 IPsec 다이렉트 인캡슐레이션 VPN의 이중화에 대해 살펴보았다.

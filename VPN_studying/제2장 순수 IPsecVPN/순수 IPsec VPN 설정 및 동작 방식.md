@@ -11,13 +11,14 @@
 
 [그림 2-1] 순수 IPsec VPN 패킷 구성
 
-
+![[2장 - 1.jpg]]
 
 그러나, 예를 들어, 나중에 살펴볼 GRE IPsec VPN은 다음 그림과 같이 IPsec 헤더외에 GRE 헤더가 추가된다. 첫 번째 그림인 트랜스포트 모드나 두 번째 그림인 터널 모드 모드에서 GRE 헤더가 추가된다.
 
 
 [그림 2-2] GRE IPsec 패킷 구성
 
+![[2장 - 2.jpg]]
 
 이처럼 IPsec 헤더외에 GRE 헤더를 추가하는 이유는 동적인 라우팅을 지원하거나, 대규모 IPsec VPN 네트워크 구축 및 관리의 편이성을 위해서이다.
 
@@ -32,13 +33,14 @@
 
 [그림 2-3] *테스트 네트워크*
 
+![[2장 - 3.jpg]]
 
 이를 위하여 다음과 같이 각 라우터의 인터페이스에 IP 주소를 부여한다.
 
 
 [그림 2-4] *IP 주소*
 
-
+![[2장 - 4.jpg]]
 
 각 라우터에서 F0/0 인터페이스를 서브 인터페이스로 동작시킨다. 서브 인터페이스 번호, 서브넷 번호  및 VLAN 번호를 동일하게 사용한다. 이를 위하여 다음과 같이 SW1에서 VLAN을 만들고, 각 라우터와 연결되는 포트를 트렁크로 동작시킨다.
 
@@ -92,18 +94,18 @@ R2의 설정은 다음과 같다.
 [예제 2-3] *R2 설정*
 
 ```bash
-R1(config)# interface f0/0
-R1(config-if)# no shut
-R1(config-if)# exit
+R2(config)# interface f0/0
+R2(config-if)# no shut
+R2(config-if)# exit
 
-R1(config)# interface f0/0.12
-R1(config-subif)# encapsulation dot1Q 10
-R1(config-subif)# ip address 10.1.12.2 255.255.255.0
-R1(config-subif)# exit
+R2(config)# interface f0/0.12
+R2(config-subif)# encapsulation dot1Q 10
+R2(config-subif)# ip address 10.1.12.2 255.255.255.0
+R2(config-subif)# exit
 
-R1(config)# interface f0/0.23
-R1(config-subif)# encapsulation dot1Q 23
-R1(config-subif)# ip address 10.1.23.2 255.255.255.0
+R2(config)# interface f0/0.23
+R2(config-subif)# encapsulation dot1Q 23
+R2(config-subif)# ip address 10.1.23.2 255.255.255.0
 ```
 
 
@@ -114,39 +116,39 @@ R3의 설정은 다음과 같다.
 [예제 2-4] *R3 설정*
 
 ``` bash
-R1(config)# interface f0/0
-R1(config-if)# no shut
-R1(config-if)# exit
+R3(config)# interface f0/0
+R3(config-if)# no shut
+R3(config-if)# exit
 
-R1(config)# interface f0/0.23
-R1(config-subif)# encapsulation dot1Q 23
-R1(config-subif)# ip address 10.1.23.3 255.255.255.0
-R1(config-subif)# exit
+R3(config)# interface f0/0.23
+R3(config-subif)# encapsulation dot1Q 23
+R3(config-subif)# ip address 10.1.23.3 255.255.255.0
+R3(config-subif)# exit
 
-R1(config)# interface f0/0.34
-R1(config-subif)# encapsulation dot1Q 34
-R1(config-subif)# ip address 10.1.34.3 255.255.255.0
+R3(config)# interface f0/0.34
+R3(config-subif)# encapsulation dot1Q 34
+R3(config-subif)# ip address 10.1.34.3 255.255.255.0
 
-R1(config)# interface f0/0.35
-R1(config-subif)# encapsulation dot1Q 35
-R1(config-subif)# ip address 10.1.35.3 255.255.255.0
+R3(config)# interface f0/0.35
+R3(config-subif)# encapsulation dot1Q 35
+R3(config-subif)# ip address 10.1.35.3 255.255.255.0
 ```
 
 R4의 설정은 다음과 같다.
-
+[예제 2-5] R4 설정
 ``` bash
-R1(config)# interface f0/0
-R1(config-if)# no shut
-R1(config-if)# exit
+R4(config)# interface f0/0
+R4(config-if)# no shut
+R4(config-if)# exit
 
-R1(config)# interface f0/0.34
-R1(config-subif)# encapsulation dot1Q 34
-R1(config-subif)# ip address 10.1.34.3 255.255.255.0
-R1(config-subif)# exit
+R4(config)# interface f0/0.34
+R4(config-subif)# encapsulation dot1Q 34
+R4(config-subif)# ip address 10.1.34.3 255.255.255.0
+R4(config-subif)# exit
 
-R1(config)# interface f0/0.40
-R1(config-subif)# encapsulation dot1Q 40
-R1(config-subif)# ip address 10.1.40.3 255.255.255.0
+R4(config)# interface f0/0.40
+R4(config-subif)# encapsulation dot1Q 40
+R4(config-subif)# ip address 10.1.40.3 255.255.255.0
 
 ```
 
@@ -155,18 +157,18 @@ R5의 설정은 다음과 같다.
 [예제 2-6] *R5 설정*
 
 ``` bash
-R1(config)# interface f0/0
-R1(config-if)# no shut
-R1(config-if)# exit
+R5(config)# interface f0/0
+R5(config-if)# no shut
+R5(config-if)# exit
 
-R1(config)# interface f0/0.35
-R1(config-subif)# encapsulation dot1Q 35
-R1(config-subif)# ip address 10.1.35.5 255.255.255.0
-R1(config-subif)# exit
+R5(config)# interface f0/0.35
+R5(config-subif)# encapsulation dot1Q 35
+R5(config-subif)# ip address 10.1.35.5 255.255.255.0
+R5(config-subif)# exit
 
-R1(config)# interface f0/0.50
-R1(config-subif)# encapsulation dot1Q 50
-R1(config-subif)# ip address 10.1.50.5 255.255.255.0
+R5(config)# interface f0/0.50
+R5(config-subif)# encapsulation dot1Q 50
+R5(config-subif)# ip address 10.1.50.5 255.255.255.0
 ```
 
 라우터의 IP 주소 설정이 끝나면 넥스트 홉 IP 주소까지의 통신을 핑으로 확인한다. 다음에는 외부망 또는 인터넷으로 사용할 부분의 라우팅을 설정한다.
@@ -174,16 +176,16 @@ R1(config-subif)# ip address 10.1.50.5 255.255.255.0
 
 [그림 2-5] *외부망 라우팅*
 
-
+![[2장 - 5.jpg]]
 
 이를 위하여 외부망에 인접한 각 라우터에서 다음과 같이 R3으로 정적인 디폴트 루트를 설정한다.
 
 [예제 2-7] *디폴트 루트 설정*
 
 ``` bash
-R2(config)# ip route 0.0.0.0 0.0.0.0 1.1.23.3
-R3(config)# ip route 0.0.0.0 0.0.0.0 1.1.34.3
-R4(config)# ip route 0.0.0.0 0.0.0.0 1.1.35.3
+R3(config)# ip route 0.0.0.0 0.0.0.0 1.1.23.3
+R4(config)# ip route 0.0.0.0 0.0.0.0 1.1.34.3
+R5(config)# ip route 0.0.0.0 0.0.0.0 1.1.35.3
 
 
 ```
@@ -213,7 +215,7 @@ R2# ping 1.1.35.5
 
 [그림 2-6] *내부망 라우팅*
 
-
+![[2장 - 6.jpg]]
 
 
 
@@ -276,7 +278,7 @@ ACL은 R4, R5가 전송하는 ISAKMP 패킷 및 ESP 패킷을 허용한다. 이�
 
 [그림 2-7] IPsec VPN 설정
 
-
+![[2장 - 7.jpg]]
 
 
 지사 네트워크인 R4의 `10.1.40.0/24`와 R5의 `10.1.50.0/24` 네트워크 사이의 통신도 본사 라우터인 R2를 통하도록 설정한다.
