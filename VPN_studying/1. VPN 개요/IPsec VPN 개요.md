@@ -42,7 +42,7 @@ ISAKMP는 이와 같은 일을 하는 절차를 명시한 프로토콜이고, IK
 
 
 [그림 1-1] *IKE 제1단계 절차 (메인 모드)*
-![[기본 폴더 - 1.jpg]]
+
 
 ![기본 폴더 -1](https://github.com/user-attachments/assets/1c47efb2-2094-4b44-ab6f-36b02cdc5a24)
 
@@ -51,7 +51,7 @@ ISAKMP는 이와 같은 일을 하는 절차를 명시한 프로토콜이고, IK
 
 [그림 1-2] IKE 제1단계 절차(어그레시브 모드)
 
-![[기본 폴더 - 2.jpg]]
+![기본 폴더 -2](https://github.com/user-attachments/assets/25312471-fc00-4830-86e3-57b394dd546a)
 
 
 <mark style="background: #BBFABBA6;">어그레시브 모드에서는 첫 번째 패킷에 ISAKMP SA 제안, 디피-헬먼 키 계산에 필요한 정보 및 ID까지 담아 보낸다.</mark> <mark style="background: #BBFABBA6;">두 번째 패킷에는 응답 장비인 R2에서 선택된 ISAKMP SA, 디피-헬먼 키 계산에 필요한 정보와 함께 R1을 인증하는 메시지가 포함된다.</mark> 마지막으로 R1이 인증 메시지를 전송하여 IKE 1단계 협상이 종료된다.
@@ -63,7 +63,7 @@ IKE 1단계 협상이 종료되면 <mark style="background: #ADCCFFA6;">실제 �
 
 [그림 1-3] *IKE 제2단계 보안정책 협상*
 
-![[기본 폴더 - 3.jpg]]
+![기본 폴더 -3](https://github.com/user-attachments/assets/d40cbd0f-3ae2-4e6b-ad47-19d0a67b968a)
 
 1. R1이 실제 데이터를 보호하기 위한 보안정책 즉, <mark style="background: #BBFABBA6;">IPsec SA를 제안</mark>한다. 여기에는 암호화/해싱 알고리즘, 보호대상 네트워크 정보, VPN 동작 모드(터널 모드 또는 트랜스 포트 모드), 인캡슐레이션 방식(ESP또는 AH) 등이 포함된다. 앞서의 단계에서 살펴본 ISAKMP 패킷을 보호하기 위한 보안정책과 실제 데이터를 보호하기 위한 IPsec 보안정책은 별개이다. 또, VPN 동작 모드와 인캡슐레이션 방시에 대해서는 나중에 자세히 설명한다.
 2. <mark style="background: #BBFABBA6;">이를 수신한 R2는 자신이 지원가능한 IPsec SA 세트를 선택하여 R1에게 알려준다.</mark>
@@ -88,7 +88,7 @@ ISAKMP 세션에서 송수신되는 패킷들을 모두 UDP 포트번호 500을 
 
  [그림 1-4] ISAKMP와 IPsec 패킷
 
-![[기본 폴더 - 4.jpg]]
+![Image](https://github.com/user-attachments/assets/44ce28c2-b745-4c03-95c5-3588ce2986f1)
 
 <mark style="background: #BBFABBA6;">처음 IKE 제1단계에서 6개의 ISAKMP 패킷이 메인보드로 교환되고,</mark> <mark style="background: #BBFABBA6;">다시 IKE 제2 단계에서는 3개의 패킷이 퀵모드로 송수신된다.</mark> 이후, 실제 데이터들은 ESP로 인캡슐레이션되어 전송되는 것을 확인할 수 있다.
 
@@ -106,7 +106,8 @@ ISAKMP 세션에서 송수신되는 패킷들을 모두 UDP 포트번호 500을 
 [그림 1-5] *ESP 패킷 포맷*
 
 
-![[기본 폴더 - 5 1.jpg]]
+![Image](https://github.com/user-attachments/assets/fdba6690-1c6e-4be6-8f54-4e1cfc6a6bc0)
+
 
 - **패딩**(padding): 사용된 암호화 알고리즘에 따라 필요한 크기를 맞추기 위하여 추가하는 <mark style="background: #FF5582A6;">의미없는 데이터이다.</mark>
 - **패딩 길이**(pad length): 패딩의 길이를 바이트 단위로 표시하며 **8비트**이다.
@@ -124,7 +125,7 @@ AH의 패킷 포맷은 다음과 같다.
 
 [그림 1-6] *AH 패킷 포맷*
 
-![[기본 폴더 - 6.jpg]]
+![Image](https://github.com/user-attachments/assets/54a1082b-c363-420b-840d-bc449c85ef7b)
 
 
 $2^{32}$ 개의 패킷을 전송한 다음에는 새로운 SA를 협상해야 한다. 또, RFC4302에서는 64비트의 순서번호도 사용할 수 있도록 규정하고 있다.
@@ -141,7 +142,7 @@ IPsec VPN은 원래의 데이터 패킷에 VPN 장비의 세로운 IP 헤더를 
 
 [그림 1-7] *IPsec VPN 트랜스포트 모드 동작 범위*
 
-![[기본 폴더 - 7.jpg]]
+![Image](https://github.com/user-attachments/assets/229d6b57-e3d0-4a38-ba00-e67da4d5d8bf)
 
 
 인캡슐레이션 방식을 ESP로 사용하는 IPsec VPN인 경우, 다음 그림과 같이 IP 헤더 다음에 8바이트의 ESP 헤더가 온다. ESP 헤더 다음에는 원래의 데이터가 위치하고, 그 다음에는 **ESP 트레일러**와 패킷 무결성 확인을 위한 해시코드인 **ICV**가 첨부된다.
@@ -149,7 +150,7 @@ IPsec VPN은 원래의 데이터 패킷에 VPN 장비의 세로운 IP 헤더를 
 
 [그림 1-8] *IPsec VPN 트랜스포트 모드(ESP) 패킷*
 
-![[기본 폴더 - 8.jpg]]
+![Image](https://github.com/user-attachments/assets/4b02ad8c-9bda-458b-93d9-c92e2264c14e)
 
 
 
@@ -160,7 +161,7 @@ IPsec VPN은 원래의 데이터 패킷에 VPN 장비의 세로운 IP 헤더를 
 
 [그림 1-9] *IPsec VPN 트랜포트 모드(AH) 패킷*
 
-![[기본 폴더 - 9.jpg]]
+![Image](https://github.com/user-attachments/assets/0f5579d4-b317-422b-9310-271855a6db88)
 
 
 <mark style="background: #ADCCFFA6;">이때 IP 헤더중에서 값이 변동되는 필드인 TTL, DSCP, ECN, 첵섬 등은 해시코드 계산에서 제외한다. </mark>그 이유는 AH 패킷이 전송 도중에 이와같은 필드 값들이 변동될 수 있고, 결과적으로 해시코드 값이 달라지기 때문이다. 결과적으로 AH 트랜스포트 모드를 사용하면 레이어 3 정보부터 인증된다.
@@ -180,7 +181,7 @@ IPsec VPN은 원래의 데이터 패킷에 VPN 장비의 세로운 IP 헤더를 
 
 
 
-![[기본 폴더 - 10.jpg]]
+![Image](https://github.com/user-attachments/assets/45a2563b-9973-4856-92c0-1dd5e3b78299)
 
 
 
@@ -194,7 +195,7 @@ IPsec VPN은 원래의 데이터 패킷에 VPN 장비의 세로운 IP 헤더를 
 
 [그림 1-11] *IPsec VPN 터널 모드(ESP) 패킷*
 
-![[기본 폴더 - 11.jpg]]
+![Image](https://github.com/user-attachments/assets/9dd09ba6-77bb-413e-9103-af6f6717f7d7)
 
 터널 모드로 동작하는 <mark style="background: #BBFABBA6;">AH 패킷은 다음 그림과 같이 원래의 패킷 앞에 VPN 게이트웨이의 주소를 사용한 IP 헤더를 새로 추가한다.</mark> 터널 모드에서 AH는 새로운 IP 헤더를 포함한 전체 패킷에 대해서 인증 및 무결성 확인 기능을 적용한다.
 
@@ -202,7 +203,7 @@ IPsec VPN은 원래의 데이터 패킷에 VPN 장비의 세로운 IP 헤더를 
 
 [그림 1-12] *IPsec VPN 터널 모드(AH) 패킷*
 
-![[기본 폴더 - 12.jpg]]
+![Image](https://github.com/user-attachments/assets/398ba97f-11b9-42a6-87b2-3239bbfaedc8)
 
 이때 새로운 IP 헤더 중에서 값이 변동되는 필드인 TTL, DSCP, ECN, 첵섬 등은 해시코드 계산에서 제외한다. 그러나, <mark style="background: #BBFABBA6;">원래의 IP 헤더는 전송도중 TTL 등이 변경되지 않으므로 해시코드 계산시 모두 포함된다.
 </mark>
@@ -282,13 +283,13 @@ NAT-T(NAT traversal)란 <mark style="background: #ADCCFFA6;">IPsec 장비들 사
 
 [그림 1-13] *IP 주소 변경 시 해시 코드 값이 달라진다*
 
-![[기본 폴더 - 13.jpg]]
+![Image](https://github.com/user-attachments/assets/a6c770c2-0dad-494e-b942-3ccf54f02504)
 
 결과적으로 수신장비에 계산된 해시코드 값이 달라져서 IPsec이 동작하지 않는다. 이와 같은 문제들을 해결하기 위하여 NAT-T를 사용한다. <mark style="background: #ADCCFFA6;">만약 IPsec 장비 사이에 NAT 장비가 존재하면 IPSec 장비들은 트래픽을 전송할 때 다음 그림과 같이 IPsec 패킷을 UDP 세그먼트 내부에 인캡슐레이션시켜서 전송한다.</mark> 이 때 UDP 포트번호 4500을 사용한다.
 
 [그림 1-14] *UDP 포트번호 4500을 사용한 인캡슐레이션*
 
-![[기본 폴더 - 14.jpg]]
+![Image](https://github.com/user-attachments/assets/d36962b4-a6c3-4af9-8da2-57ae32d4f4d8)
 
 IPSec 장비 사이에 NAT 장비가 존재하는 것을 확인하기 위하여 IKE 제1단계에서 서로에게 해싱된 데이터를 전송한다. 해싱 정보가 달라지면 NAT 장비가 존재함을 의미한다. 그러면 자동으로 IKE 제2단계에서 데이터 전송시 NAT-T 기능을 사용한다.
 
