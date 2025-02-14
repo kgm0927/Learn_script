@@ -8,49 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "14f461d9a89e8a78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-20 리눅스 환경.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "예제 2-20 리눅스 환경"
-            }
-          },
-          {
             "id": "461381912c3a2b7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VPN_studying/1. VPN 개요/IPsec VPN 개요.md",
+                "file": "가상 라우팅 생성/가상 라우팅 생성.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IPsec VPN 개요"
-            }
-          },
-          {
-            "id": "45fd76d482aeae78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-23 리눅스 예제.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "예제 2-23 리눅스 예제"
+              "title": "가상 라우팅 생성"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d2ae33fb664ba62d",
@@ -194,46 +166,46 @@
   },
   "active": "461381912c3a2b7b",
   "lastOpenFiles": [
-    "VPN_studying/기본 폴더 - 4.jpg",
+    "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-1 리눅스 환경.md",
+    "VPN_studying/제2장 순수 IPsecVPN/순수 IPsec VPN 설정 및 동작 방식.md",
+    "VPN_studying/제2장 순수 IPsecVPN/제2장.md",
+    "VPN_studying/제2장 순수 IPsecVPN/동적 크립토 맵.md",
     "VPN_studying/1. VPN 개요/IPsec VPN 개요.md",
+    "VPN_studying/1. VPN 개요/제1장.md",
+    "가상 라우팅 생성/가상 라우팅 생성.md",
+    "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-2 리눅스 환경.md",
+    "VPN_studying/1. VPN 개요/VPN 개요.md",
+    "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 리눅스 2-51 환경.md",
+    "VPN_studying/제4장 GRE IPsec VPN/GRE IPsec VPN 설정 및 동작 확인.md",
+    "VPN_studying/제4장 GRE IPsec VPN/제4장 IPsec VPN.md",
+    "VPN_studying/제3장 IPsec VPN 이중화/다수개의 크립토 피어를 이용한 이중화.md",
+    "VPN_studying/제3장 IPsec VPN 이중화/HSRP와 RRI를 이용한 이중화.md",
+    "VPN_studying/제3장 IPsec VPN 이중화/제3장 IPsec VPN 이중화.md",
+    "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-20 리눅스 환경.md",
+    "Distributed Services with Go/Chapter1 프로젝트 시작.md",
+    "VPN_studying/제6장 DMVPN/제6장 DMVPN.md",
+    "VPN_studying/제6장 DMVPN/기본적인 DMVPN의 설정 및 동작 확인.md",
+    "VPN_studying/제5장 GRE IPsec VPN 이중화/제5장 GRE IPsec VPN 이중화.md",
+    "VPN_studying/제5장 GRE IPsec VPN 이중화/GRE IPsec VPN 이중화.md",
+    "VPN_studying/제4장 GRE IPsec VPN/유동 IP 환경의 GRE IPsec VPN 구성.md",
+    "VPN_studying/기본 폴더 - 4.jpg",
     "VPN_studying/기본 폴더 - 3.jpg",
     "VPN_studying/기본 폴더 - 2.jpg",
     "Pasted image 20250206162940.png",
     "VPN_studying/기본 폴더 - 1.jpg",
     "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-23 리눅스 예제.md",
-    "VPN_studying/제2장 순수 IPsecVPN/순수 IPsec VPN 설정 및 동작 방식.md",
-    "VPN_studying/제2장 순수 IPsecVPN/제2장.md",
-    "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-20 리눅스 환경.md",
     "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-18 리눅스 환경.md",
     "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/`crypto isakmp`.md",
-    "VPN_studying/제2장 순수 IPsecVPN/리눅스 예제/예제 2-2 리눅스 환경.md",
-    "VPN_studying/제2장 순수 IPsecVPN/동적 크립토 맵.md",
-    "VPN_studying/1. VPN 개요/제1장.md",
-    "VPN_studying/1. VPN 개요/VPN 개요.md",
     "bot 개발 다이어그램/bot.md",
-    "Distributed Services with Go/Chapter6 시스템 관측.md",
-    "Distributed Services with Go/Chapter5 서비스 보안.md",
-    "Distributed Services with Go/Chapter7 서버 간 서비스 디스커버리.md",
-    "Distributed Services with Go/Chapter4 gRPC 요청 처리.md",
     "distributed_go_chap4.drawio.png",
-    "Distributed Services with Go/Chapter3 로그 패키지 작성.md",
-    "Distributed Services with Go/Chapter2 프로토콜 버퍼와 구조체.md",
     "distributed_go_chap2.drawio.png",
-    "Distributed Services with Go/Chapter1 프로젝트 시작.md",
-    "etcd.md",
     "bot 개발 다이어그램",
-    "VPN_studying/제6장 DMVPN/기본적인 DMVPN의 설정 및 동작 확인.md",
-    "VPN_studying/제6장 DMVPN/제6장 DMVPN.md",
-    "VPN_studying/제5장 GRE IPsec VPN 이중화/제5장 GRE IPsec VPN 이중화.md",
     "VPN_studying/제6장 DMVPN",
-    "VPN_studying/제5장 GRE IPsec VPN 이중화/GRE IPsec VPN 이중화.md",
-    "가상 라우팅 생성/가상 라우팅 생성.md",
     "VPN_studying/제5장 GRE IPsec VPN 이중화",
     "VPN_studying/제4장 GRE IPsec VPN",
     "VPN_studying/제3장 IPsec VPN 이중화/이미지/3장 - 5.jpg",
     "VPN_studying/제3장 IPsec VPN 이중화/이미지/3장 - 12.jpg",
     "VPN_studying/제3장 IPsec VPN 이중화/이미지/3장 - 11.jpg",
-    "VPN_studying/제3장 IPsec VPN 이중화/이미지/3장 - 10.jpg",
     "VPN_studying/제3장 IPsec VPN 이중화/이미지/open.url",
     "VPN_studying/제3장 IPsec VPN 이중화/이미지",
     "VPN_studying/제2장 순수 IPsecVPN/이미지",

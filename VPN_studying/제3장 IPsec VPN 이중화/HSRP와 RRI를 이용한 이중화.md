@@ -1,11 +1,11 @@
 
 
-이번 장에서 장애에 대비하여 순수 IPsec VPN을 이중화하는 방법에 대하여 살펴본다. 순수 IPsec VPN을 이중화할 수 있는 방법은 다음과 같다.
+이번 장에서 장애에 대비하여 **순수 IPsec VPN을 이중화**하는 방법에 대하여 살펴본다. 순수 IPsec VPN을 이중화할 수 있는 방법은 다음과 같다.
 
 - HSRP와 RRI(reverse route injection)를 이용한 IPsec VPN 이중화
-- 다수개의 크립토 피어를 이용한 이중화
-- SSO나 SSP를 이용한 이중화
-- 먼저, HSRP와 RRI를 이용하여 IPsec VPN 이중화해 보자.
+- 다수개의 **크립토 피어**를 이용한 이중화
+- **SSO**나 **SSP**를 이용한 이중화
+- 먼저, **HSRP**와 **RRI**를 이용하여 IPsec VPN 이중화해 보자.
 
 
 
